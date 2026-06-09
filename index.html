@@ -3,82 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The AI Code Editor</title>
+    <title>Platy Studio — Box Office Quality AI Dubbing</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <!-- <link rel="stylesheet" href="css/header.css" /> -->
   </head>
   <body>
-    <!-- Include header.html -->
-    <!-- <include src="header.html"></include> -->
     <nav id="header"></nav>
 
     <header class="hero">
-      <h1>The AI Video Production Studio</h1>
+      <h1>Box Office Quality AI Dubbing</h1>
       <p class="subtitle">
-        Platy.Studio is the best way to create Box-office quality Dubbing and
-        Karaoke.
+        Redefining video localization at scale for movies, OTT, sports, news,
+        and content creators.
       </p>
       <div class="cta-buttons">
-        <button class="button book-demo-button">Book a demo</button>
+        <a href="https://platy.studio" class="button book-demo-button">Visit platy.studio</a>
       </div>
     </header>
 
     <main>
       <section class="features">
         <div class="feature-card">
-          <h3>Box office quality dubbing</h3>
+          <h3>Adaptive Translation</h3>
           <p>
-            Retains inter-character dynamics, timings,voice quality, emotion and
-            background sounds.
+            Smartly adjusts pacing to keep translated audio in sync with the
+            original video.
           </p>
           <div id="demo-videos" class="feature-image slideshow-container">
-            <!-- Next and previous buttons -->
             <a class="prev" onclick="plusDubSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusDubSlides(1)">&#10095;</a>
           </div>
         </div>
 
         <div class="feature-card">
-          <h3>Apply Instantly</h3>
-          <p>Get suggestions that work instantly to table to style an array</p>
+          <h3>Voice Cloning</h3>
+          <p>
+            Captures and replicates the speaker's voice, volume, texture, and
+            style.
+          </p>
           <div id="demo-karaokes" class="feature-image slideshow-container">
-            <!-- Next and previous buttons -->
             <a class="prev" onclick="plusKaraokeSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusKaraokeSlides(1)">&#10095;</a>
           </div>
         </div>
 
         <div class="feature-card">
-          <h3>Codebase knowledge</h3>
-          <p>Update code with new snippets easily and efficiently</p>
+          <h3>Emotive Nuance</h3>
+          <p>
+            Preserves subtle feelings and tone so performances stay authentic
+            and impactful.
+          </p>
           <div class="feature-image"></div>
         </div>
       </section>
 
       <section class="benefits">
-        <h2>Build software faster</h2>
+        <h2>Built for high-volume production</h2>
         <div class="benefit-cards">
           <div class="benefit-card">
             <div class="icon frontier"></div>
-            <h4>Frontier Intelligence</h4>
-            <p>Access to cutting-edge AI models</p>
+            <h4>10× Faster</h4>
+            <p>Compared to traditional localization methods</p>
           </div>
           <div class="benefit-card">
             <div class="icon private"></div>
-            <h4>Private and Secure</h4>
-            <p>Your code stays on your machine</p>
+            <h4>30+ Languages</h4>
+            <p>And growing every month</p>
           </div>
           <div class="benefit-card">
             <div class="icon familiar"></div>
-            <h4>Feels Familiar</h4>
-            <p>Works with your existing workflow</p>
+            <h4>99% Quality Retention</h4>
+            <p>Of original audio fidelity</p>
           </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <p>Loved by developers</p>
+      <p>© Platy Studio LLC · Seattle-based AI video production studio</p>
     </footer>
     <script src="js/script.js" defer></script>
     <script>
@@ -86,13 +87,12 @@
         .then((response) => response.text())
         .then((html) => {
           document.getElementById("header").innerHTML = html;
-          // Initialize header.js functionality
           const hamburgerMenu = document.querySelector(".hamburger-menu");
           const mobileMenu = document.querySelector(".mobile-menu");
 
           if (hamburgerMenu && mobileMenu) {
             hamburgerMenu.addEventListener("click", () => {
-              mobileMenu.classList.toggle("active"); // Add or remove the "active" class
+              mobileMenu.classList.toggle("active");
             });
           }
         });
